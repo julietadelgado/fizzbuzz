@@ -14,11 +14,11 @@ describe("Test for ExplorerService", () => {
     })
     test("2. Validate length explorers by mission", () => {
         const quantityExplorersInNode = ExplorerService.getAmountOfExplorersByMission(explorers, "node")
-        expect(quantityExplorersInNode).toBe(11)
+        expect(quantityExplorersInNode).toBe(10)
     })
     test("3. Get Explorers UsernamesByMission", () => {
         const explorerUserNamesInNode = ExplorerService.getExplorersUsernamesByMission(explorers, "node")
-        expect(quantityExplorersInNode).toContain("ajolonauta1315")
+        expect(explorerUserNamesInNode).toContain("ajolonauta1315")
     })
     
 })
