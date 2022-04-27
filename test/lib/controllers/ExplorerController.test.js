@@ -13,4 +13,8 @@ describe("Test for ExplorerController", () => {
         const explorerUserNamesInNode = ExplorerController.getExplorersUsernamesByMission("node");
         expect(explorerUserNamesInNode).toContain("ajolonauta13");
     });
+    test("3. Get Explorers Amount by mission", () => {
+        const quantityExplorersInNode = ExplorerController.getExplorersAmonutByMission("node");
+        expect(quantityExplorersInNode).toContain(10);
+    });
 });
