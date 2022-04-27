@@ -9,4 +9,8 @@ describe("Test for ExplorerController", () => {
             ])
         );
     });
+    test("2. Get Explorers UsernamesByMission", () => {
+        const explorerUserNamesInNode = ExplorerController.getExplorersUsernamesByMission("node");
+        expect(explorerUserNamesInNode).toContain("ajolonauta13");
+    });
 });
