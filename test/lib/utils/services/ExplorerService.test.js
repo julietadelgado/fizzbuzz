@@ -18,7 +18,7 @@ describe("Test for ExplorerService", () => {
     })
     test("3. Get Explorers UsernamesByMission", () => {
         const explorerUserNamesInNode = ExplorerService.getExplorersUsernamesByMission(explorers, "node")
-        expect(explorerUserNamesInNode).toContain("ajolonauta1315")
+        expect(explorerUserNamesInNode).toContain("ajolonauta13")
     })
     
 })
