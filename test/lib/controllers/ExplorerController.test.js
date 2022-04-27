@@ -15,6 +15,6 @@ describe("Test for ExplorerController", () => {
     });
     test("3. Get Explorers Amount by mission", () => {
         const quantityExplorersInNode = ExplorerController.getExplorersAmonutByMission("node");
-        expect(quantityExplorersInNode).toContain(10);
+        expect(quantityExplorersInNode).toBe(10);
     });
 });
